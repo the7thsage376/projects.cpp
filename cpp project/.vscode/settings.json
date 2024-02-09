@@ -1,0 +1,7 @@
+{
+    "cmake.configureOnOpen": false,
+    "git.ignoreLimitWarning": true,
+    "cSpell.words": [
+        "exitonclick"
+    ]
+}
