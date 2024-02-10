@@ -55,11 +55,20 @@ int main()
   // counting the number of times the game is played and comparing it to the limit
   // counting the number of times the user wins against the computer
   // user must win 2 or 3 times to win the game
-  while (limit == 3)
-  {
+  for (int i=0; i < limit; i++) {
+  // game logic
+  int rounds = 0;
+
+for (int i=0; i < limit; i++) {
+  rounds++;
+  // rest of game logic
+}
+  // using a switch statement to compare user input with computer choice
+
+
     if (user_input == cpu_answer)
     {
-      cout << "Draw!" << endl;
+      cout << "It's a tie!" << endl;
     }
     else if (user_input == choices[0] && cpu_answer == choices[2])
     {
@@ -73,7 +82,31 @@ int main()
     {
       cout << " Scissor wins!" << endl;
     }
-  }
+    int userWins = 0;
+    int cpuWins = 0;
 
+for (int i=0; i < limit; i++) {
+  // increment userWins or cpuWins based on each round result
+
+  if (userWins > cpuWins) {
+    cout << "You won the game!" << endl; 
+  }
+  else {
+    cout << "CPU won the game!" << endl;
+  }
+}
+  // using a for loop to keep playing the game until the limit is reached
+  char playAgain;
+do {
+  // game code
+
+  cout << "Play again? (y/n)" << endl;
+  cin >> playAgain;
+
+} while (playAgain == 'y');
+  // using a do...while loop to keep playing the game until the limit is reached
+
+
+  }
   return 0;
 }
