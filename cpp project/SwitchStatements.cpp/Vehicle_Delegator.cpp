@@ -8,6 +8,7 @@ int main()
     cin >> age;
 
 //Switch statement to check age and vehicle type
+// unfinished
     switch(age)
     {
         case 1:
